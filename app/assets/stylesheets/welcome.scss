@@ -14,3 +14,21 @@ color: red;
   padding: 5px;
   height: 200px; 
 }
+
+.social-btn {
+  border: 2px solid #ccc;
+  padding: 10px ;
+  background-color: #ccc; 
+  border-radius: 20px;
+}
+
+.social-btn:hover {
+  text-decoration: none;
+  background-color: #6ab47b;
+}
+
+
+.selector:hover {
+  /*property-name: value*/
+  border: 1px solid red;
+}
