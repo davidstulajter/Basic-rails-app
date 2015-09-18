@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Post, type: :model do
+RSpec.describe Post do
   let(:post) { Post.create!(title: "New Post Title", body: "New Post body") }
   describe "attributes" do
     it "should respond to title" do
