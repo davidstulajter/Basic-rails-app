@@ -9,7 +9,4 @@ class CreateComments < ActiveRecord::Migration
     add_foreign_key :comments, :posts
   end
 end
-class Post < ActiveRecord::Base
-  has_many :coomments
-end
   
