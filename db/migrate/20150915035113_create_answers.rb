@@ -9,4 +9,3 @@ class CreateAnswers < ActiveRecord::Migration
     add_foreign_key :question
   end
 end
-
