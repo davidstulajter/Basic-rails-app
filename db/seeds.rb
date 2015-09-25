@@ -13,17 +13,15 @@ posts = Post.all
    body: RandomData.random_paragraph
   )
 end
-if Post.where(:id=>0).blank?
+if Post.where(title: "UNIQUE TITLE", body: "UNIQUE BODY" ).blank?
   Post.create(
-    id: 0,
     title: "UNIQUE TITLE",
     body: "UNIQUE BODY"
     )
   puts "Created Unique Post Here"
 end
-if Comment.where(:id=>0).blank?
+if Comment.where(body: "UNIQUE BODY").blank?
   Comment.create(
-    id: 0,
     body: "UNIQUE BODY"
     )
   puts "Created Unique Comment Here"
