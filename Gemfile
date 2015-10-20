@@ -2,17 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
-gem 'bootstrap-sass'
 
-# #1
-group :production do
- gem 'pg'
-end
-
-# #2
-group :development do
- gem 'sqlite3'
-end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
