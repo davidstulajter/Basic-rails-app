@@ -37,7 +37,7 @@ end
   describe "DELETE sessions/id" do
     it "renders the #welcome view" do
       delete :destroy, id: my_user.id
-      expect(response).to redirect_to rooth_path
+      expect(response).to redirect_to root_path
     end
     it "deletes the user's session" do
       delete :destroy, id: my_user.id
